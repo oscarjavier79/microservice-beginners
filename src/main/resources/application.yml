@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: OrganizationService
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://172.17.0.2:3306/ejemplo
+    username: root
+    password: 1QaZ2WsX
+    driver-class-name: com.mysql.jdbc.Driver
+
+eureka:
+  client:
+    eureka-server-port: 8761
